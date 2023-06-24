@@ -252,3 +252,89 @@ header .navbar li:hover {
     right: 12rem;
     opacity: 0.1;
 }
+
+/* Features section */
+.features {
+    width: 100%;
+    height: 80vh;
+    background: url('./image/blog.svg') no-repeat bottom / cover;
+    z-index: -1;
+    padding: 0rem 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-container {
+    flex: 1 1 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.feature-box {
+    width: 250px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.feature-box i {
+    font-size: 1.8rem;
+    color: rgb(232, 33, 232);
+    padding-bottom: 1rem;
+}
+
+.feature-box h4 {
+    font-size: 1.3rem;
+    padding-bottom: 0.8rem;
+}
+
+.feature-box p {
+    color: #444;
+}
+
+.feature-text {
+    flex: 1 1 20rem;
+}
+
+.feature-text h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.feature-text p {
+    font-size: 1.2rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.feature-text .btn {
+    background: transparent;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    transition: all 0.3s linear;
+}
+
+.feature-text .btn:hover {
+    letter-spacing: 1px;
+}
+
+.features .dot:nth-of-type(1) {
+    top: 220vh;
+    right: 1rem;
+}
+
+.features .dot:nth-of-type(1)>img {
+    width: 140px;
+}
+
+.features .dot:nth-of-type(2) {
+    top: 255vh;
+    left: 4rem;
+}
