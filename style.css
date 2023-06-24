@@ -338,3 +338,94 @@ header .navbar li:hover {
     top: 255vh;
     left: 4rem;
 }
+
+/* clients comments */
+
+.clients {
+    height: 100vh;
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.clients .text-support {
+    text-align: center;
+    width: 380px;
+    color: #444;
+    font-size: 1.1rem;
+    margin: 0.5rem auto;
+}
+
+.clients-slider {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 10%;
+}
+
+.client-box {
+    flex: 1 1 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+
+}
+
+
+.client-box i {
+    font-size: 2.5rem;
+    color: pink;
+}
+
+.client-box p {
+    font-size: 1.1krem;
+    color: #444;
+}
+
+.client-box .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.client-box .detail img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 2rem 0.5rem;
+}
+
+.client-box .detail>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    justify-content: center;
+}
+
+.client-box .detail>div .name {
+    font-size: 1.2rem;
+}
+
+.client-box .detail>div .title {
+    font-size: 1rem;
+    color: #444;
+}
+
+.clients .dot:nth-of-type(1) {
+    top: 295vh;
+    z-index: 1000;
+    opacity: 0.2;
+}
+
+.clients .dot:nth-of-type(2) {
+    top: 350vh;
+    left: 2rem;
+    z-index: 1;
+    opacity: 0.6;
+}
