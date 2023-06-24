@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #59f3b3;
+    --white: #fff;
+    --color: rgb(21, 188, 188);
+    --from: 30deg;
+    --distance: 46%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background: transparent;
+    /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5); */
+    width: 100%;
+
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 560;
+    color: var(--color);
+}
+
+.logo h1>span {
+    color: #333;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .navbar li {
+    font-size: 1.2rem;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+
+header .navbar li:hover {
+    color: var(--color);
+}
+
+.btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    background: var(--color);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Blobs SVG background image via https://haikei.app/ */
+
+
+
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url('./image/blog.svg') no-repeat bottom / cover;
+    /* position: relative; */
+    /* top: 0; */
+    /* left: 0; */
+    z-index: -1;
+
+}
+
+.home .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10% 10%;
+}
+
+.home-text {
+    flex: 1 1 30rem;
+}
+
+.home-text h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    width: 380px;
+    line-height: 3rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.home-text h1>span {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.home-text p {
+    margin-top: 1rem;
+    width: 350px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.home-text .btn {
+    margin-top: 1rem;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.home-text .btn:hover {
+    letter-spacing: 1px;
+}
+
+.image {
+    flex: 1 1 30rem;
+    /* border-radius: 50%; */
+    z-index: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* dot image */
+.dot {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.dot:nth-of-type(2) {
+    top: 80%;
+    right: 38rem;
+    /* width: 140px; */
+}
+
+.dot:nth-of-type(2)>img {
+    width: 140px;
+}
+
+.dot:nth-of-type(3) {
+    top: 20%;
+    left: 2rem;
+    /* width: 140px; */
+}
+
+.dot:nth-of-type(3)>img {
+    width: 140px;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    padding: 8rem 20%;
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.about .container {
+    margin-top: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.about .container p {
+    font-size: 1.2rem;
+}
+
+.icons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.icons .box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icons .box div {
+    text-align: start;
+}
+
+.icons .box div>h4 {
+    font-size: 2rem;
+}
+
+.icons .box div>p {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.about .container .btn {
+    margin-top: 3rem;
+    border-radius: 4rem;
+    text-transform: uppercase;
+}
+
+.about .dot:nth-of-type(1) {
+    top: 110vh;
+    opacity: 0.1;
+}
+
+.about .dot:nth-of-type(2) {
+    top: 130vh;
+    left: 4rem;
+    opacity: 0.1;
+}
+
+.about .dot:nth-of-type(3) {
+    top: 170vh;
+    left: 20rem;
+    opacity: 0.1;
+}
+
+.about .dot:nth-of-type(4) {
+    top: 170vh;
+    right: 12rem;
+    opacity: 0.1;
+}
