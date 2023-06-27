@@ -347,7 +347,7 @@ header .navbar li:hover {
     padding-top: 6rem;
 }
 
-.clients .text-support {
+.text-support {
     text-align: center;
     width: 380px;
     color: #444;
@@ -360,9 +360,15 @@ header .navbar li:hover {
     justify-content: center;
     text-align: start;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem !important;
     width: 100%;
-    padding: 2rem 10%;
+    padding: 2rem 9%;
+    height: 50vh;
+}
+
+.slick-dots {
+    width: 100% !important;
+    margin-left: -6rem !important;
 }
 
 .client-box {
@@ -371,9 +377,9 @@ header .navbar li:hover {
     flex-direction: column;
     gap: 0.7rem;
     padding: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 10px;
-
+    margin-left: 0.8rem;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    border: 2px solid #333;
 }
 
 
@@ -428,4 +434,208 @@ header .navbar li:hover {
     left: 2rem;
     z-index: 1;
     opacity: 0.6;
+}
+
+.download {
+    width: 100% !important;
+    height: 50vh;
+    background: url('./image/blog.svg') no-repeat bottom / cover;
+    padding: 3rem 10%;
+}
+
+.download .heading,
+.text-support {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 4rem;
+
+}
+
+.buttons .down {
+    display: flex;
+    align-items: center;
+    border: 2px #fff solid;
+    width: 250px;
+    height: 80px;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.down i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.down>div {
+    color: #fff;
+}
+
+/* plan section */
+.plan {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.plan .heading {
+    padding-top: 2rem;
+}
+
+.plan .plan-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 10%;
+}
+
+.plan-container .plan-box {
+    background: #eee;
+    width: 250px;
+    height: 380px;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.plan-container .plan-box:hover {
+    transform: scale(1.1);
+
+}
+
+.plan-box>span {
+    color: var(--color);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.plan-box .package {
+    background: #fff;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.plan-box .package h4 {
+    font-size: 4rem;
+    margin-top: 2rem;
+    line-height: 3rem;
+    color: var(--color);
+}
+
+.plan-box .package span {
+    color: #626262;
+    /* margin-top: -4rem; */
+    font-size: 1rem;
+}
+
+.plan-box ul {
+    margin-top: 1rem;
+}
+
+.plan-box ul li {
+    margin-top: 0.3rem;
+    list-style: square;
+    color: var(--color);
+    font-size: 1rem;
+}
+
+.plan-box .btn {
+    margin-top: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: lighter;
+    opacity: 0.3;
+    transition: all 0.3s linear;
+}
+
+.plan-box:hover .btn {
+    opacity: 1;
+}
+
+.mobile {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 239, 255);
+    padding-top: 0.5rem;
+}
+
+.mobile-container {
+    /* margin-top: 1rem; */
+    height: 100%;
+    width: 100%;
+    padding: 0rem 10%;
+}
+
+.mobile-container>img {
+    width: 100%;
+    height: 80%;
+}
+
+
+.work {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 7%;
+}
+
+.work .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.work .container:nth-of-type(2),
+.work .container:nth-of-type(3) {
+    margin-top: 8rem;
+}
+
+
+.container .work-image {
+    flex: 1 1 20rem;
+}
+
+.container .work-text {
+    flex: 1 1 20rem;
+}
+
+.container .work-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container .work-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container .work-text .btn {
+    border-radius: 2rem;
+    font-weight: lighter;
+    background: transparent;
+    border: 2px solid var(--green);
+    color: var(--green);
+    box-shadow: none;
+}
+
+.container .work-text .btn:hover {
+    background: var(--green);
+    color: #fff;
 }
