@@ -13,12 +13,22 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
 
-
     <section class="home">
+        <div class="loader">
+            <span class="text">
+                <h3>Loading Animation</h3s>
+            </span>
+            <span class="line-container">
+                <span class="line"></span>
+            </span>
+        </div>
         <div class="dot">
             <img src="image/remover.png" alt="">
         </div>
@@ -29,6 +39,7 @@
             <img src="image/remover.png" alt="">
         </div>
         <header>
+
             <div class="logo">
                 <h1>Amaar<span>Raza</span> </h1>
             </div>
@@ -73,7 +84,7 @@
             <img src="./image/remover.png" alt="">
         </div>
         <h1 class="heading">About Applax</h1>
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tenetur, recusandae, reprehenderit a
                 numquam eum quaerat aliquid voluptate exercitationem provident aliquam nesciunt non sit sed labore
@@ -82,7 +93,7 @@
                 consectetur facere beatae, asperiores voluptatum veritatis quos hic, nemo, maiores repellendus numquam
                 ducimus aliquam impedit. Quibusdam?
             </p>
-            <div class="icons">
+            <div class="icons" data-aos="fade-right">
                 <div class="box">
                     <i class="fas fa-cloud-download-alt" style="color:rgb(255, 167, 181); font-size: 2rem;"></i>
                     <div>
@@ -139,8 +150,8 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ea earum voluptatem error.</p>
             </div>
         </div>
-        <div class="feature-text">
-            <h3>Applax Features</h3>
+        <div class="feature-text" data-aos="fade-right">
+            <h4>Applax Features</h4>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus optio, suscipit sunt
                 voluptatibus pariatur laudantium harum quisquam.
@@ -389,7 +400,7 @@
                 <img src="image/work.jpg" alt="">
             </div>
             <div class="work-text">
-                <h3>Register and Login</h3>
+                <h4>Register and Login</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus optio, suscipit sunt
                     voluptatibus pariatur laudantium harum quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
@@ -401,7 +412,7 @@
         <div class="container">
 
             <div class="work-text">
-                <h3>Select your Location</h3>
+                <h4>Select your Location</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus optio, suscipit sunt
                     voluptatibus pariatur laudantium harum quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
@@ -418,7 +429,7 @@
                 <img src="image/work2.jpg" alt="">
             </div>
             <div class="work-text">
-                <h3>Go whereever you want</h3>
+                <h4>Go whereever you want</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus optio, suscipit sunt
                     voluptatibus pariatur laudantium harum quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
@@ -430,13 +441,66 @@
     </section>
 
     <section class="contact">
-        <h1 class="heading">Contact Us</h1>
-        <p class="text-support" style="color: #333;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+        <h1 class="heading" style="color: #fff;">Contact Us</h1>
+        <p class="text-support" style="color: #fff;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
             perspiciatis. dolor
         </p>
+        <div class="contact-container">
+            <div class="contact-links">
+                <div class="link-box">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span>Email</span>
+                    <p>reviewapp@gmail.com</p>
+                </div>
+                <div class="link-box">
+                    <div>
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <span>Phone</span>
+                    <p>+92304-3042589</p>
+                </div>
+                <div class="link-box">
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                    <p>ReviewApp.linkedIn.com</p>
+                </div>
+                <div class="link-box">
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <span>Twitter</span>
+                    <p>Follow us</p>
+                </div>
+                <div class="link-box">
+                    <div>
+                        <i class="fa-brands fa-skype"></i>
+                    </div>
+                    <span>Skype</span>
+                    <p>Call Us</p>
+                </div>
+
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.519617323437!2d68.36123392457267!3d25.387411623971566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70ee760a28e3%3A0x237431113a093222!2sSaddar%2C%20Hyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1688015169324!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
 
     </section>
 
+
+    <section id="footer">
+        <h1>&copy; copyright @ 2022 by <span>Amaar Raza</span> </h1>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
@@ -478,7 +542,7 @@
             });
         })
     </script>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
